@@ -1,12 +1,12 @@
 import httpx
 
-from config.settings import settings
+from config.settings import infra_settings
 
 
 class BaseAPIClient:
     def __init__(self):
 
-        self.base_url = settings.API_BASE_URL
+        self.base_url = infra_settings.bot.API_BASE_URL
         self.token = None
 
     @property
@@ -26,7 +26,7 @@ class BaseAPIClient:
                     endpoint, json=payload, headers={"Content-Type": "application/json"}
                 )
                 response.raise_for_status()
-                data = response.json()  # сохраняем в переменную
+                data = response.json()
                 self.token = data.get("access_token")  # сохраняем токен
                 return data
             except httpx.HTTPStatusError as e:

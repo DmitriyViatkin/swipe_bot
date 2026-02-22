@@ -1,0 +1,53 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Project-Id-Version: \n"
+
+msgid "enter_email"
+msgstr "📧 Please enter your Email:"
+
+msgid "email_recorded"
+msgstr "✅ Email {email} recorded. Now enter your password:"
+
+msgid "checking_data"
+msgstr "🔄 Checking credentials on server..."
+
+msgid "auth_success"
+msgstr "✅ Authorization successful!\n\nLogged in as: **{email}**\nView profile: /profile"
+
+msgid "auth_error"
+msgstr "❌ Error: {error}\n\nPlease try entering Email again:"
+
+msgid "not_authorized"
+msgstr "🔐 You are not authorized. Press /start to login."
+
+msgid "profile_data"
+msgstr "👤 Your profile data:\n\n`{data}`"
+
+msgid "language_set_success"
+msgstr "🇺🇸 Language set to English"
+
+# Authorization main buttons
+msgid "btn_login"
+msgstr "🔐 Login"
+
+msgid "btn_register"
+msgstr "📝 Register"
+
+# Language selection buttons
+msgid "btn_lang_uk"
+msgstr "🇺🇦 Ukrainian"
+
+msgid "btn_lang_en"
+msgstr "🇺🇸 English"
+
+msgid "btn_lang_ru"
+msgstr "🇷🇺 Russian"
+
+# Other general buttons
+msgid "btn_back"
+msgstr "⬅️ Back"
+
+msgid "btn_cancel"
+msgstr "❌ Cancel"

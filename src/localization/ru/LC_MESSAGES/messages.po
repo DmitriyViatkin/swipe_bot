@@ -1,0 +1,53 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Project-Id-Version: \n"
+
+msgid "enter_email"
+msgstr "📧 Введите ваш Email:"
+
+msgid "email_recorded"
+msgstr "✅ Email {email} записан. Теперь введите ваш пароль:"
+
+msgid "checking_data"
+msgstr "🔄 Проверка данных на сервере..."
+
+msgid "auth_success"
+msgstr "✅ Авторизация успешна!\n\nВы вошли как: **{email}**\nПосмотреть профиль: /profile"
+
+msgid "auth_error"
+msgstr "❌ Ошибка: {error}\n\nПопробуйте ввести Email еще раз:"
+
+msgid "not_authorized"
+msgstr "🔐 Вы не авторизованы. Нажмите /start, чтобы войти."
+
+msgid "profile_data"
+msgstr "👤 Данные вашего профиля:\n\n`{data}`"
+
+msgid "language_set_success"
+msgstr "🇷🇺 Язык установлен: Русский"
+
+# Кнопки главного меню авторизации
+msgid "btn_login"
+msgstr "🔐 Войти"
+
+msgid "btn_register"
+msgstr "📝 Регистрация"
+
+# Кнопки выбора языка
+msgid "btn_lang_uk"
+msgstr "🇺🇦 Украинский"
+
+msgid "btn_lang_en"
+msgstr "🇺🇸 Английский"
+
+msgid "btn_lang_ru"
+msgstr "🇷🇺 Русский"
+
+# Другие общие кнопки
+msgid "btn_back"
+msgstr "⬅️ Назад"
+
+msgid "btn_cancel"
+msgstr "❌ Отмена"

@@ -1,45 +1,40 @@
 import asyncio
 import logging
-
-from aiogram import Bot, Dispatcher, types
-from aiogram.filters import Command
-from config.settings import settings
+from aiogram.fsm.storage.redis import RedisStorage
+from redis.asyncio import Redis
+from aiogram.utils.i18n import I18n, FSMI18nMiddleware
+from aiogram import Bot, Dispatcher
+from config.settings import infra_settings
 from src.api_client.base_api import BaseAPIClient
+from src.bot.authorization.handlers import router as main_router
+
+i18n = I18n(path="src/localization", default_locale="ua", domain="messages")
 
 
 async def main():
+    logging.basicConfig(
+        level=logging.INFO if not infra_settings.bot.DEBUG else logging.DEBUG,
+        format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+    )
 
-    logging.basicConfig(level=logging.INFO if not settings.DEBUG else logging.DEBUG)
+    redis_client = Redis.from_url(infra_settings.redis.url, decode_response=True)
+    storage = RedisStorage(redis_client)
 
-    bot = Bot(token=settings.BOT_TOKEN)
-    dp = Dispatcher()
+    bot = Bot(token=infra_settings.bot.BOT_TOKEN)
+    dp = Dispatcher(storage=storage)
     api = BaseAPIClient()
-    print(settings.API_BASE_URL)
-    print(settings.BOT_TOKEN)
-    print("BASE_URL:", repr(api.base_url))
-    # Авторизация
-    login_resp = await api.login("viatkindima@gmail.com", "string")
-    if "error" in login_resp:
-        print("Login failed:", login_resp)
-        return
-    print("Login success. Token:", api.token)
+    i18n_middleware = FSMI18nMiddleware(i18n=i18n)
+    i18n_middleware.setup(dp)
 
-    # Пример получения данных пользователя через api
-    user_data = await api.get_data(1)
-    print("User data:", user_data)
-
-    @dp.message(Command("profile"))
-    async def get_profile(message: types.Message):
-        data = await api.get_data(message.from_user.id)
-
-        if "error" in data:
-            await message.answer(f"Error API: {data['error']}")
-        else:
-            await message.answer(f"Data from server: {data}")
-
-    print("🚀 Бот запускається...")
-    print(f"Bot started DEBAG. Regim : {'DEBUG' if settings.DEBUG else 'PRODUCTION'}")
-    await dp.start_polling(bot)
+    logging.info(
+        f"🚀 Бот запускається... Режим: {'DEBUG' if infra_settings.bot.DEBUG else 'PROD'}"
+    )
+    dp.include_router(main_router)
+    try:
+        await dp.start_polling(bot, api=api)
+    finally:
+        await redis_client.close()
+        await bot.session.close()
 
 
 if __name__ == "__main__":
