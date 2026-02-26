@@ -5,49 +5,150 @@ msgstr ""
 "Project-Id-Version: \n"
 
 msgid "enter_email"
-msgstr "📧 Введите ваш Email:"
+msgstr "  Введите ваш Email:"
 
 msgid "email_recorded"
-msgstr "✅ Email {email} записан. Теперь введите ваш пароль:"
+msgstr "  Email {email} записан. Теперь введите ваш пароль:"
 
 msgid "checking_data"
-msgstr "🔄 Проверка данных на сервере..."
+msgstr "  Проверка данных на сервере..."
 
 msgid "auth_success"
-msgstr "✅ Авторизация успешна!\n\nВы вошли как: **{email}**\nПосмотреть профиль: /profile"
+msgstr "  Авторизация успешна!\n\nВы вошли как: **{email}**\nПосмотреть профиль: /profile"
 
 msgid "auth_error"
-msgstr "❌ Ошибка: {error}\n\nПопробуйте ввести Email еще раз:"
+msgstr "  Ошибка: {error}\n\nПопробуйте ввести Email еще раз:"
 
 msgid "not_authorized"
-msgstr "🔐 Вы не авторизованы. Нажмите /start, чтобы войти."
+msgstr "  Вы не авторизованы. Нажмите /start, чтобы войти."
 
 msgid "profile_data"
-msgstr "👤 Данные вашего профиля:\n\n`{data}`"
+msgstr "  Данные вашего профиля:\n\n`{data}`"
 
 msgid "language_set_success"
-msgstr "🇷🇺 Язык установлен: Русский"
+msgstr "  Язык установлен: Русский"
 
 # Кнопки главного меню авторизации
 msgid "btn_login"
-msgstr "🔐 Войти"
+msgstr "  Войти"
 
 msgid "btn_register"
-msgstr "📝 Регистрация"
+msgstr " Регистрация"
 
 # Кнопки выбора языка
 msgid "btn_lang_uk"
-msgstr "🇺🇦 Украинский"
+msgstr " Украинский"
+
+
 
 msgid "btn_lang_en"
-msgstr "🇺🇸 Английский"
+msgstr " Английский"
 
 msgid "btn_lang_ru"
-msgstr "🇷🇺 Русский"
+msgstr "  Русский"
 
 # Другие общие кнопки
 msgid "btn_back"
-msgstr "⬅️ Назад"
+msgstr " Назад"
 
 msgid "btn_cancel"
-msgstr "❌ Отмена"
+msgstr "  Отмена"
+
+# Ключи для состояний
+msgid "enter_new_first_name"
+msgstr "Введите ваше новое имя:"
+
+msgid "enter_new_last_name"
+msgstr "Введите вашу новую фамилию:"
+
+msgid "enter_new_phone"
+msgstr "Введите ваш новый номер телефона:"
+
+msgid "enter_new_email"
+msgstr "Введите ваш новый email:"
+
+msgid "enter_new_password"
+msgstr "Введите ваш новый пароль:"
+
+# Ключи для клавиатуры
+msgid "edit_first_name"
+msgstr " Имя"
+
+msgid "edit_last_name"
+msgstr " Фамилия"
+
+msgid "edit_phone_name"
+msgstr "  Телефон"
+
+msgid "edit_email_name"
+msgstr "  Email"
+
+msgid "edit_photo_name"
+msgstr "  Фото"
+
+msgid "edit_password_"
+msgstr "  Пароль"
+
+msgid "finish_registration_btn"
+msgstr "  Подтвердить регистрацию"
+
+# Ключи для сообщений
+msgid "data_updated"
+msgstr " Данные обновлены!"
+
+msgid "registration_complete_success"
+msgstr " Регистрация прошла успешно!"
+
+msgid "registration_failed"
+msgstr " Ошибка регистрации. Попробуйте позже."
+
+msgid "check_your_data"
+msgstr "Проверьте ваши данные:"
+
+msgid "btn_back_to_lang"
+msgstr "Изменить язык"
+
+
+# Ключи для состояний
+msgid "enter_first_name"
+msgstr "Введите ваше  имя:"
+
+msgid "enter_last_name"
+msgstr "Введите вашу ю фамилию:"
+
+msgid "enter_phone"
+msgstr "Введите ваш  номер телефона:"
+
+msgid "enter_email"
+msgstr "Введите ваш  email:"
+
+msgid "enter_password"
+msgstr "Введите ваш  пароль:"
+# Кнопки выбора языка
+msgid "Ukrainian"
+msgstr "Ukrainian"
+
+msgid "Russian"
+msgstr "Russian"
+
+msgid "English"
+msgstr "English"
+
+# Кнопки меню
+msgid "btn_login"
+msgstr "Войти"
+
+msgid "btn_register"
+msgstr "Регистрация"
+
+msgid "btn_back_to_lang"
+msgstr "Изменить язык"
+
+msgid "btn_back"
+msgstr "Назад"
+
+msgid "btn_cancel"
+msgstr "Отмена"
+
+msgid "language_set_success"
+msgstr "Язык установлен!"

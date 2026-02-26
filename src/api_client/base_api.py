@@ -34,6 +34,40 @@ class BaseAPIClient:
             except Exception as e:
                 return {"error": str(e)}
 
+    async def registration(
+        self,
+        first_name: str,
+        last_name: str,
+        phone: str,
+        email: str,
+        photo: str,
+        password: str,
+        role: str = "client",
+    ):
+        endpoint = "/users/user/create/"
+        payload = {
+            "first_name": first_name,
+            "last_name": last_name,
+            "phone": phone,
+            "email": email,
+            "role": "client",
+            "photo": photo,
+            "password": password,
+        }
+
+        async with httpx.AsyncClient(base_url=self.base_url, timeout=10.0) as client:
+            try:
+                responses = await client.post(
+                    endpoint, json=payload, headers={"Content-Type": "application/json"}
+                )
+                responses.raise_for_status()
+                data = responses.json()
+                return data
+            except httpx.HTTPStatusError as e:
+                return {"error": f"Server returned {e.response.status_code}"}
+            except Exception as e:
+                return {"error": str(e)}
+
     async def _request(self, method: str, endpoint: str, **kwargs):
         async with httpx.AsyncClient(
             base_url=self.base_url, headers=self.headers, timeout=10.0

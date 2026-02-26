@@ -51,3 +51,100 @@ msgstr "⬅️ Back"
 
 msgid "btn_cancel"
 msgstr "❌ Cancel"
+# State keys
+msgid "enter_new_first_name"
+msgstr "Enter your new first name:"
+
+msgid "enter_new_last_name"
+msgstr "Enter your new last name:"
+
+msgid "enter_new_phone"
+msgstr "Enter your new phone number:"
+
+msgid "enter_new_email"
+msgstr "Enter your new email address:"
+
+msgid "enter_new_password"
+msgstr "Enter your new password:"
+
+# Keyboard keys
+msgid "edit_first_name"
+msgstr "✏️ Name"
+
+msgid "edit_last_name"
+msgstr "✏️ Last Name"
+
+msgid "edit_phone_name"
+msgstr "📞 Phone"
+
+msgid "edit_email_name"
+msgstr "📧 Email"
+
+msgid "edit_photo_name"
+msgstr "🖼 Photo"
+
+msgid "edit_password_"
+msgstr "🔑 Password"
+
+msgid "finish_registration_btn"
+msgstr "✅ Confirm Registration"
+
+# Message keys
+msgid "data_updated"
+msgstr "✅ Data updated!"
+
+msgid "registration_complete_success"
+msgstr "🎉 Registration successful!"
+
+msgid "registration_failed"
+msgstr "❌ Registration failed. Please try again later."
+
+msgid "check_your_data"
+msgstr "Check your data:"
+
+msgid "btn_back_to_lang"
+msgstr "Change language"
+
+msgid "enter_first_name"
+msgstr "Please enter your first name:"
+
+msgid "enter_last_name"
+msgstr "Please enter your last name:"
+
+msgid "enter_phone"
+msgstr "Please enter your phone number:"
+
+msgid "enter_email"
+msgstr "Please enter your email address:"
+
+msgid "enter_password"
+msgstr "Please enter your password:"
+
+# Language selection buttons
+msgid "Ukrainian"
+msgstr "Ukrainian"
+
+msgid "Russian"
+msgstr "Russian"
+
+msgid "English"
+msgstr "English"
+
+# Menu buttons
+msgid "btn_login"
+msgstr "Login"
+
+msgid "btn_register"
+msgstr "Registration"
+
+msgid "btn_back_to_lang"
+msgstr "Change language"
+
+msgid "btn_back"
+msgstr "Back"
+
+msgid "btn_cancel"
+msgstr "Cancel"
+
+msgid "language_set_success"
+msgstr "Language has been set!"

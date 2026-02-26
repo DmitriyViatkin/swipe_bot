@@ -1,0 +1,123 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Project-Id-Version: \n"
+
+msgid "enter_email"
+msgstr "Введіть ваш Email:"
+
+msgid "email_recorded"
+msgstr "Email {email} записано. Тепер введіть ваш пароль:"
+
+msgid "checking_data"
+msgstr "Перевірка даних на сервері..."
+
+msgid "auth_success"
+msgstr "Авторизація успішна!\n\nВи увійшли як: **{email}**\nПереглянути профіль: /profile"
+
+msgid "auth_error"
+msgstr "Помилка: {error}\n\nСпробуйте ввести Email ще раз:"
+
+msgid "not_authorized"
+msgstr "Ви не авторизовані. Натисніть /start, щоб увійти."
+
+msgid "profile_data"
+msgstr "Дані вашого профілю:\n\n`{data}`"
+
+msgid "language_set_success"
+msgstr "Мову встановлено: Українська"
+
+
+msgid "btn_login"
+msgstr "Увійти"
+
+msgid "btn_register"
+msgstr "Реєстрація"
+
+msgid "btn_lang_uk"
+msgstr "Українська"
+
+msgid "btn_lang_en"
+msgstr "English"
+
+msgid "btn_lang_ru"
+msgstr "Русский"
+
+
+msgid "btn_back"
+msgstr "️Назад"
+
+msgid "btn_cancel"
+msgstr "Скасувати"
+
+msgid "enter_new_first_name"
+msgstr "Введіть ваше нове ім'я:"
+
+msgid "enter_new_phone"
+msgstr "Введіть ваш новий номер телефону:"
+
+
+msgid "edit_first_name"
+msgstr "Ім'я"
+
+msgid "edit_phone_name"
+msgstr "Телефон"
+
+
+msgid "data_updated"
+msgstr "Дані оновлено!"
+
+msgid "registration_complete_success"
+msgstr "Реєстрація пройшла успішно!"
+
+msgid "registration_failed"
+msgstr "Помилка реєстрації. Спробуйте пізніше."
+
+msgid "btn_back_to_lang"
+msgstr "Змінити мову"
+
+# Ключі для станів
+msgid "enter_first_name"
+msgstr "Будь ласка, введіть ваше ім'я:"
+
+msgid "enter_last_name"
+msgstr "Будь ласка, введіть ваше прізвище:"
+
+msgid "enter_phone"
+msgstr "Будь ласка, введіть ваш номер телефону:"
+
+msgid "enter_email"
+msgstr "Будь ласка, введіть вашу електронну пошту (email):"
+
+msgid "enter_password"
+msgstr "Будь ласка, введіть ваш пароль:"
+
+# Кнопки вибору мови
+msgid "Ukrainian"
+msgstr "Ukrainian"
+
+msgid "Russian"
+msgstr "Russian"
+
+msgid "English"
+msgstr "English"
+
+# Кнопки меню
+msgid "btn_login"
+msgstr "Увійти"
+
+msgid "btn_register"
+msgstr "Реєстрація"
+
+msgid "btn_back_to_lang"
+msgstr "Змінити мову"
+
+msgid "btn_back"
+msgstr "Назад"
+
+msgid "btn_cancel"
+msgstr "Скасувати"
+
+msgid "language_set_success"
+msgstr "Мову встановлено!"
