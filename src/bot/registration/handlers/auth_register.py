@@ -7,13 +7,11 @@ from src.bot.authorization.keyboards.control_keyboards import get_control_keyboa
 router = Router()
 
 
-@router.callback_query(F.data == "auth_register")
-async def start_registration(callback: types.CallbackQuery, state: FSMContext):
+@router.message(F.text == __("btn_register"))
+async def start_registration(message: types.Message, state: FSMContext):
     await state.set_state(RegistrationState.waiting_for_first_name)
-    await callback.message.answer(
-        _("enter_first_name"), reply_markup=get_control_keyboard()
-    )
-    await callback.answer()
+
+    await message.answer(_("enter_first_name"), reply_markup=get_control_keyboard())
 
 
 @router.message(F.text == __("btn_cancel"))
