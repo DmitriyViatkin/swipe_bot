@@ -10,13 +10,12 @@ from . import (
     process_password_and_show_summary,
     edit_field,
     finish_registration,
-    back,
+    back as back,
 )
 
 router = Router()
 router.include_routers(
     base.router,
-    back.router,
     auth_register.router,
     process_first_name.router,
     last_name.router,

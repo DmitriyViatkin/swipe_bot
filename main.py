@@ -8,6 +8,8 @@ from config.settings import infra_settings
 from src.api_client.base_api import BaseAPIClient
 from src.bot.authorization.handlers import router as auth_router
 from src.bot.registration.handlers import router as register_router
+from src.bot.main_menu.handlers import router as menu_router
+from src.bot.adverts.handlers import router as advert_router
 
 i18n = I18n(path="src/localization", default_locale="uk", domain="messages")
 
@@ -32,6 +34,9 @@ async def main():
     )
     dp.include_router(auth_router)
     dp.include_router(register_router)
+    dp.include_router(menu_router)
+    dp.include_router(advert_router)
+
     try:
         await dp.start_polling(bot, api=api)
     finally:

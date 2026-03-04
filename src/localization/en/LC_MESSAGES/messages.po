@@ -37,13 +37,13 @@ msgstr "📝 Register"
 
 # Language selection buttons
 msgid "btn_lang_uk"
-msgstr "🇺🇦 Ukrainian"
+msgstr "Українська"
 
 msgid "btn_lang_en"
-msgstr "🇺🇸 English"
+msgstr "English"
 
 msgid "btn_lang_ru"
-msgstr "🇷🇺 Russian"
+msgstr "Русский"
 
 # Other general buttons
 msgid "btn_back"
@@ -148,3 +148,7 @@ msgstr "Cancel"
 
 msgid "language_set_success"
 msgstr "Language has been set!"
+
+
+msgid "auth_choice_text"
+msgstr "Let's start over!"

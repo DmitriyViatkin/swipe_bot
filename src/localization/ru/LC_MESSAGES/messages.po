@@ -37,15 +37,13 @@ msgstr " Регистрация"
 
 # Кнопки выбора языка
 msgid "btn_lang_uk"
-msgstr " Украинский"
-
-
+msgstr "Українська"
 
 msgid "btn_lang_en"
-msgstr " Английский"
+msgstr "English"
 
 msgid "btn_lang_ru"
-msgstr "  Русский"
+msgstr "Русский"
 
 # Другие общие кнопки
 msgid "btn_back"
@@ -152,3 +150,6 @@ msgstr "Отмена"
 
 msgid "language_set_success"
 msgstr "Язык установлен!"
+
+msgid "auth_choice_text"
+msgstr "Начнем сначала!"

@@ -121,3 +121,6 @@ msgstr "Скасувати"
 
 msgid "language_set_success"
 msgstr "Мову встановлено!"
+
+msgid "auth_choice_text"
+msgstr "Почнемо спочатку!"

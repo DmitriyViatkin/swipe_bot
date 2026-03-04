@@ -15,7 +15,6 @@ async def start_login(message: types.Message, state: FSMContext):
     await message.answer(_("enter_email"), reply_markup=get_control_keyboard())
 
 
-# --- 1. Обробка кнопки "Скасувати" ---
 @router.message(F.text == __("btn_cancel"))
 async def cancel_auth(message: types.Message, state: FSMContext):
     await state.clear()
