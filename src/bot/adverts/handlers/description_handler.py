@@ -10,7 +10,7 @@ router = Router()
 
 @router.message(
     AdvertsState.waiting_for_description,
-    ~F.text.in_([__("btn_cancel_r"), __("btn_back")]),
+    ~F.text.in_([__("btn_cancel_a"), __("btn_back_a")]),
 )
 async def description_handler(message: types.Message, state: FSMContext):
     await state.update_data(description=message.text)

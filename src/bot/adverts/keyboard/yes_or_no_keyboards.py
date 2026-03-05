@@ -8,7 +8,7 @@ def yes_no_kb():
     builder.button(text=_("yes"))
     builder.button(text=_("no"))
     builder.row(
-        types.KeyboardButton(text=_("btn_back")),
-        types.KeyboardButton(text=_("btn_cancel_r")),
+        types.KeyboardButton(text=_("btn_back_a")),
+        types.KeyboardButton(text=_("btn_cancel_a")),
     )
     return builder.as_markup(resize_keyboard=True)

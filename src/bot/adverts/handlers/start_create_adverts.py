@@ -10,7 +10,8 @@ router = Router()
 
 
 @router.message(
-    AdvertsState.waiting_for_address, ~F.text.in_([__("btn_cancel_r"), __("btn_back")])
+    AdvertsState.waiting_for_address,
+    ~F.text.in_([__("btn_cancel_a"), __("btn_back_a")]),
 )
 async def start_create_advert(message: types.Message, state: FSMContext):
 

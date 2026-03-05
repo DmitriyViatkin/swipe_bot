@@ -14,7 +14,7 @@ async def edit_advert_field(callback: types.CallbackQuery, state: FSMContext):
         "address": AdvertsState.waiting_for_address,
         "appointment": AdvertsState.waiting_for_appointment,
         "layout": AdvertsState.waiting_for_layout,
-        "state": AdvertsState.waiting_for_state,
+        "state": AdvertsState.waiting_for_build_state,
         "heating": AdvertsState.waiting_for_heating,
         "payment": AdvertsState.waiting_for_payment,
         "communication": AdvertsState.waiting_for_communication,

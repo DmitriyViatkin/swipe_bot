@@ -42,9 +42,7 @@ async def process_finish_create_advert(
         "is_balcony": bool(user_data.get("is_balcony")),
         "commission": float(str(user_data.get("commission", 0)).replace(",", ".")),
         "description": user_data.get("description"),
-        "price": int(user_data.get("price"))
-        if str(user_data.get("price", "0")).isdigit()
-        else 0,
+        "price": float(str(user_data.get("price", 0)).replace(",", ".")),
         "images": user_data.get("images", []),
     }
     print(payload)

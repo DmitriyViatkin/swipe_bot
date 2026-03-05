@@ -2,13 +2,14 @@ from aiogram import types
 from aiogram.fsm.context import FSMContext
 from aiogram.utils.i18n import gettext as _
 from src.bot.adverts.adverts_state import AdvertsState
+from aiogram.types import ReplyKeyboardRemove
 from src.bot.adverts.keyboard.confirm_advert_inline_kb import (
     get_confirm_advert_inline_kb,
 )
 
 
 async def process_show_summary(message: types.Message, state: FSMContext):
-
+    await message.answer(_("send_photos_now"), reply_markup=ReplyKeyboardRemove())
     data = await state.get_data()
 
     await state.set_state(AdvertsState.confirm_data)

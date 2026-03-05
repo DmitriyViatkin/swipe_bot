@@ -1,13 +1,17 @@
 from aiogram import Router, F, types
 from aiogram.fsm.context import FSMContext
-from aiogram.utils.i18n import gettext as _
+from aiogram.utils.i18n import gettext as _, lazy_gettext as __
 from src.bot.adverts.adverts_state import AdvertsState
 from src.bot.adverts.keyboard.image_kb import finish_images_kb
 
 router = Router()
 
 
-@router.message(AdvertsState.waiting_for_price, F.text.regexp(r"^\d+[.,]?\d*$"))
+@router.message(
+    AdvertsState.waiting_for_price,
+    F.text.regexp(r"^\d+[.,]?\d*$"),
+    ~F.text.in_([__("btn_cancel_a"), __("btn_back_a")]),
+)
 async def price_handler(message: types.Message, state: FSMContext):
 
     text = message.text.replace(",", ".")

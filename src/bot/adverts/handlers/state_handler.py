@@ -10,9 +10,9 @@ router = Router()
 
 @router.message(
     AdvertsState.waiting_for_build_state,
-    ~F.text.in_([__("btn_cancel_r"), __("btn_back")]),
+    ~F.text.in_([__("btn_cancel_a"), __("btn_back_a")]),
 )
 async def state_handler(message: types.Message, state: FSMContext):
     await state.update_data(state=message.text)
     await state.set_state(AdvertsState.waiting_for_heating)
-    await message.answer(_("select_state"), reply_markup=get_enum_kb(HeatingEnum))
+    await message.answer(_("select_heating"), reply_markup=get_enum_kb(HeatingEnum))

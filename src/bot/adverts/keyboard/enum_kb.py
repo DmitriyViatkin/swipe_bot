@@ -11,7 +11,7 @@ def get_enum_kb(enum_class: type[Enum]):
 
     builder.adjust(2)
     builder.row(
-        types.KeyboardButton(text=str(__("btn_back"))),
-        types.KeyboardButton(text=str(__("btn_cancel_r"))),
+        types.KeyboardButton(text=str(__("btn_back_a"))),
+        types.KeyboardButton(text=str(__("btn_cancel_a"))),
     )
     return builder.as_markup(resize_keyboard=True, one_time_keyboard=True)

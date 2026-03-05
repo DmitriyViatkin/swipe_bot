@@ -3,12 +3,13 @@ from aiogram.fsm.context import FSMContext
 from aiogram.utils.i18n import gettext as _, lazy_gettext as __
 from src.bot.adverts.adverts_state import AdvertsState
 from ..handlers.show_summary import process_show_summary
+from ..keyboard.control_panel import control_keyboard
 
 router = Router()
 
 
 @router.message(
-    AdvertsState.waiting_for_rooms, ~F.text.in_([__("btn_cancel_r"), __("btn_back")])
+    AdvertsState.waiting_for_rooms, ~F.text.in_([__("btn_cancel_a"), __("btn_back_a")])
 )
 async def rooms_handler(message: types.Message, state: FSMContext):
     await state.update_data(rooms=message.text)
@@ -21,6 +22,4 @@ async def rooms_handler(message: types.Message, state: FSMContext):
         return
     await state.update_data(rooms=message.text)
     await state.set_state(AdvertsState.waiting_for_area)
-    await message.answer(
-        _("enter_area"),
-    )
+    await message.answer(_("enter_area"), reply_markup=control_keyboard())

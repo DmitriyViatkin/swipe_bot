@@ -50,11 +50,9 @@ class BaseAPIClient:
         headers = {"Content-Type": "application/json"}
         if token:
             headers["Authorization"] = f"Bearer {token}"
-        print("HEADERS:", headers)
 
         async with httpx.AsyncClient(base_url=self.base_url, timeout=10.0) as client:
             try:
-                # Передаем локальные headers в запрос
                 response = await client.request(
                     method, endpoint, headers=headers, **kwargs
                 )
@@ -82,8 +80,16 @@ class BaseAPIClient:
                 return {"error": str(e)}
 
     async def create_adverts(self, token: str, **kwargs):
-
+        print(f"DEBUG KWARGS: {kwargs}")
         endpoint = "/adverts/advert"
         return await self._request(
             method="POST", endpoint=endpoint, token=token, json=kwargs
+        )
+
+    async def get_list_adverts(self):
+
+        endpoint = "adverts/adverts"
+        return await self._request(
+            method="GET",
+            endpoint=endpoint,
         )

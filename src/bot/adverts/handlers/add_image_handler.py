@@ -12,12 +12,12 @@ router = Router()
 @router.message(
     AdvertsState.waiting_for_images,
     F.photo,
-    ~F.text.in_([__("btn_cancel_r"), __("btn_back")]),
+    ~F.text.in_([__("btn_cancel_a"), __("btn_back_a")]),
 )
 async def process_image(message: types.Message, state: FSMContext, bot: Bot):
 
     data = await state.get_data()
-    images = data.get("image", [])
+    images = data.get("images", [])
 
     photo = message.photo[-1]
     file_in_memory = BytesIO()
@@ -26,7 +26,6 @@ async def process_image(message: types.Message, state: FSMContext, bot: Bot):
     image_bytes = file_in_memory.getvalue()
     image_base_64 = base64.b64encode(image_bytes).decode("utf-8")
     new_image_obj = {
-        "image_id": 0,
         "base64": image_base_64,
         "position": len(images),
         "is_delete": False,
