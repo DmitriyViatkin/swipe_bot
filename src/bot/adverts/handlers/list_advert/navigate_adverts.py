@@ -27,7 +27,9 @@ async def navigate_adverts_handler(callback: types.CallbackQuery, state: FSMCont
     photo_url = images[0].get("image") if images else None
 
     caption = format_ad_text(ad)
-    markup = get_advert_markup(idx, len(ads))
+    advert = ads[idx]
+
+    markup = get_advert_markup(idx, len(ads), advert["id"])
 
     if photo_url:
         photo_bytes = await download_photo(photo_url)

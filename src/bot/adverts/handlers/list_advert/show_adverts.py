@@ -8,11 +8,15 @@ router = Router()
 DEFAULT_IMAGE = "https://via.placeholder.com/800x600.png?text=No+Photo"
 
 
-def get_advert_markup(current_index: int, total_count: int):
+def get_advert_markup(current_index: int, total_count: int, advert_id: int):
     buttons = []
     # Кнопка локации (пока заглушка)
     buttons.append(
-        [InlineKeyboardButton(text=_("📍 Локація"), callback_data="show_geo")]
+        [
+            InlineKeyboardButton(
+                text=_("📍 Локація"), callback_data=f"show_geo:{advert_id}"
+            )
+        ]
     )
 
     nav_row = []

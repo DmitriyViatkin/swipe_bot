@@ -4,38 +4,128 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Project-Id-Version: \n"
 
+# --- АВТОРИЗАЦИЯ И РЕГИСТРАЦИЯ ---
 msgid "enter_email"
-msgstr "  Введите ваш Email:"
+msgstr "Пожалуйста, введите вашу электронную почту (email):"
 
 msgid "email_recorded"
-msgstr "  Email {email} записан. Теперь введите ваш пароль:"
+msgstr "Email {email} записан. Теперь введите ваш пароль:"
+
+msgid "enter_password"
+msgstr "Пожалуйста, введите ваш пароль:"
 
 msgid "checking_data"
-msgstr "  Проверка данных на сервере..."
+msgstr "Проверка данных на сервере..."
 
 msgid "auth_success"
-msgstr "  Авторизация успешна!\n\nВы вошли как: **{email}**\nПосмотреть профиль: /profile"
+msgstr "Авторизация успешна!\n\nВы вошли как: **{email}**\nПросмотреть профиль: /profile"
 
 msgid "auth_error"
-msgstr "  Ошибка: {error}\n\nПопробуйте ввести Email еще раз:"
+msgstr "Ошибка: {error}\n\nПопробуйте ввести Email еще раз:"
 
 msgid "not_authorized"
-msgstr "  Вы не авторизованы. Нажмите /start, чтобы войти."
+msgstr "Вы не авторизованы. Нажмите /start, чтобы войти."
 
+msgid "no_authorization"
+msgstr "❌ Вы не авторизованы. Пожалуйста, войдите в систему."
+
+msgid "registration_complete_success"
+msgstr "Регистрация прошла успешно!"
+
+msgid "registration_failed"
+msgstr "Ошибка регистрации. Попробуйте позже."
+
+# --- ЛИЧНЫЕ ДАННЫЕ И ПРОФИЛЬ ---
 msgid "profile_data"
-msgstr "  Данные вашего профиля:\n\n`{data}`"
+msgstr "Данные вашего профиля:\n\n`{data}`"
 
-msgid "language_set_success"
-msgstr "  Язык установлен: Русский"
+msgid "you_profile"
+msgstr "Ваш профиль"
 
-# Кнопки главного меню авторизации
+msgid "name"
+msgstr "Имя"
+
+msgid "email"
+msgstr "Email"
+
+msgid "phone"
+msgstr "Телефон"
+
+msgid "no"
+msgstr "не указано"
+
+msgid "enter_first_name"
+msgstr "Пожалуйста, введите ваше имя:"
+
+msgid "enter_last_name"
+msgstr "Пожалуйста, введите вашу фамилию:"
+
+msgid "enter_phone"
+msgstr "Пожалуйста, введите ваш номер телефона:"
+
+msgid "enter_new_first_name"
+msgstr "Введите ваше новое имя:"
+
+msgid "enter_new_phone"
+msgstr "Введите ваш новый номер телефона:"
+
+msgid "data_updated"
+msgstr "Данные обновлены!"
+
+# --- КНОПКИ МЕНЮ ---
 msgid "btn_login"
-msgstr "  Войти"
+msgstr "Войти"
 
 msgid "btn_register"
-msgstr " Регистрация"
+msgstr "Регистрация"
 
-# Кнопки выбора языка
+msgid "btn_adverts"
+msgstr "🏢 Все объявления"
+
+msgid "btn_profile_data"
+msgstr "👤 Мой профиль"
+
+msgid "btn_create_advert"
+msgstr "➕ Создать объявление"
+
+msgid "btn_my_adverts"
+msgstr "📂 Мои объявления"
+
+msgid "btn_my_profile"
+msgstr "⚙️ Настройки профиля"
+
+msgid "main_menu_label"
+msgstr "Главное меню"
+
+msgid "auth_choice_text"
+msgstr "Начнем сначала!"
+
+# --- КНОПКИ УПРАВЛЕНИЯ ---
+msgid "btn_back"
+msgstr "Назад"
+
+msgid "btn_back_a"
+msgstr "⬅️ Назад"
+
+msgid "btn_cancel"
+msgstr "Отмена"
+
+msgid "btn_cancel_a"
+msgstr "❌ Отмена"
+
+msgid "btn_confirm_and_publish"
+msgstr " Подтвердить и опубликовать"
+
+msgid "btn_skip"
+msgstr "⏭ Пропустить"
+
+msgid "btn_finish_loading"
+msgstr "🏁 Завершить загрузку"
+
+# --- ЛОКАЛИЗАЦИЯ (ЯЗЫКИ) ---
+msgid "language_set_success"
+msgstr "Язык установлен!"
+
 msgid "btn_lang_uk"
 msgstr "Українська"
 
@@ -45,111 +135,241 @@ msgstr "English"
 msgid "btn_lang_ru"
 msgstr "Русский"
 
-# Другие общие кнопки
-msgid "btn_back"
-msgstr " Назад"
-
-msgid "btn_cancel"
-msgstr "  Отмена"
-
-# Ключи для состояний
-msgid "enter_new_first_name"
-msgstr "Введите ваше новое имя:"
-
-msgid "enter_new_last_name"
-msgstr "Введите вашу новую фамилию:"
-
-msgid "enter_new_phone"
-msgstr "Введите ваш новый номер телефона:"
-
-msgid "enter_new_email"
-msgstr "Введите ваш новый email:"
-
-msgid "enter_new_password"
-msgstr "Введите ваш новый пароль:"
-
-# Ключи для клавиатуры
-msgid "edit_first_name"
-msgstr " Имя"
-
-msgid "edit_last_name"
-msgstr " Фамилия"
-
-msgid "edit_phone_name"
-msgstr "  Телефон"
-
-msgid "edit_email_name"
-msgstr "  Email"
-
-msgid "edit_photo_name"
-msgstr "  Фото"
-
-msgid "edit_password_"
-msgstr "  Пароль"
-
-msgid "finish_registration_btn"
-msgstr "  Подтвердить регистрацию"
-
-# Ключи для сообщений
-msgid "data_updated"
-msgstr " Данные обновлены!"
-
-msgid "registration_complete_success"
-msgstr " Регистрация прошла успешно!"
-
-msgid "registration_failed"
-msgstr " Ошибка регистрации. Попробуйте позже."
-
-msgid "check_your_data"
-msgstr "Проверьте ваши данные:"
-
 msgid "btn_back_to_lang"
 msgstr "Изменить язык"
 
-
-# Ключи для состояний
-msgid "enter_first_name"
-msgstr "Введите ваше  имя:"
-
-msgid "enter_last_name"
-msgstr "Введите вашу ю фамилию:"
-
-msgid "enter_phone"
-msgstr "Введите ваш  номер телефона:"
-
-msgid "enter_email"
-msgstr "Введите ваш  email:"
-
-msgid "enter_password"
-msgstr "Введите ваш  пароль:"
-# Кнопки выбора языка
 msgid "Ukrainian"
-msgstr "Ukrainian"
+msgstr "Украинский"
 
 msgid "Russian"
-msgstr "Russian"
+msgstr "Русский"
 
 msgid "English"
-msgstr "English"
+msgstr "Английский"
 
-# Кнопки меню
-msgid "btn_login"
-msgstr "Войти"
+# --- ОБЪЯВЛЕНИЯ И ГЕОЛОКАЦИЯ ---
+msgid "address"
+msgstr "Адрес"
 
-msgid "btn_register"
-msgstr "Регистрация"
+msgid "location"
+msgstr "Локация (координаты)"
 
-msgid "btn_back_to_lang"
-msgstr "Изменить язык"
+msgid "coordinates"
+msgstr "Координаты"
 
-msgid "btn_back"
-msgstr "Назад"
+msgid "send_location_btn"
+msgstr "📍 Отправить мою локацию"
 
-msgid "btn_cancel"
-msgstr "Отмена"
+msgid "please_send_location"
+msgstr "Пожалуйста, нажмите кнопку ниже, чтобы отправить геолокацию объекта, или пришлите её через вложение."
 
-msgid "language_set_success"
-msgstr "Язык установлен!"
+msgid "not_specified"
+msgstr "не указано"
 
-msgid "auth_choice_text"
-msgstr "Начнем сначала!"
+msgid "preview_advert_title"
+msgstr "Предпросмотр объявления"
+
+msgid "no_adverts_found"
+msgstr "📭 У вас пока нет объявлений."
+
+msgid "advert_created_success_msg"
+msgstr "🎉 Поздравляем! Объявление успешно опубликовано!"
+
+msgid "advert_creation_failed"
+msgstr "❌ Не удалось создать объявление."
+
+# --- ПАРАМЕТРЫ ОБЪЕКТА ---
+msgid "appointment"
+msgstr "Назначение"
+
+msgid "layout"
+msgstr "Планировка"
+
+msgid "state"
+msgstr "Состояние"
+
+msgid "heating"
+msgstr "Отопление"
+
+msgid "payment"
+msgstr "Тип оплаты"
+
+msgid "commission"
+msgstr "Комиссия"
+
+msgid "description"
+msgstr "Описание"
+
+msgid "images"
+msgstr "Фотографии"
+
+msgid "price"
+msgstr "Цена"
+
+msgid "area"
+msgstr "Общая площадь"
+
+msgid "kitchen_area"
+msgstr "Площадь кухни"
+
+msgid "rooms"
+msgstr "Количество комнат"
+
+msgid "balcony"
+msgstr "Балкон"
+
+msgid "photos_count"
+msgstr "Количество загруженных фото"
+
+msgid "send_photos_now"
+msgstr "Отлично! Теперь вы можете проверить данные."
+
+msgid "yes"
+msgstr "Да"
+
+msgid "no_val"
+msgstr "Нет"
+
+# Роли пользователей
+msgid "admin"
+msgstr "Администратор"
+
+msgid "agent"
+msgstr "Агент"
+
+msgid "client"
+msgstr "Клиент"
+
+# Назначение (AppointmentEnum)
+msgid "apartments"
+msgstr "Апартаменты"
+
+msgid "flat"
+msgstr "Квартира"
+
+msgid "studio"
+msgstr "Студия"
+
+# Состояние (StateEnum)
+msgid "handed over"
+msgstr "Сдано в эксплуатацию"
+
+msgid "pit"
+msgstr "Котлован"
+
+# Планировка (LayoutEnum)
+msgid "joint"
+msgstr "Смежное"
+
+msgid "separate"
+msgstr "Раздельное"
+
+# Отопление (HeatingEnum)
+msgid "centralized"
+msgstr "Централизованное"
+
+msgid "autonomous"
+msgstr "Автономное"
+
+msgid "individual"
+msgstr "Индивидуальное"
+
+# Способы оплаты (PaymentEnum)
+msgid "cash"
+msgstr "Наличные"
+
+msgid "mortgage"
+msgstr "Ипотека"
+
+msgid "installment"
+msgstr "Рассрочка"
+
+# Стороны
+msgid "developer"
+msgstr "Застройщик"
+
+msgid "notary"
+msgstr "Нотариус"
+
+msgid "sales_department"
+msgstr "Отдел продаж"
+
+msgid "user"
+msgstr "Пользователь"
+
+# Тип строения
+msgid "apartment_building"
+msgstr "Многоквартирный дом"
+
+msgid "private_house"
+msgstr "Частный дом"
+
+msgid "house"
+msgstr "Дом"
+# Ключи вопросов из STATES_MAP
+msgid "enter_address"
+msgstr "Пожалуйста, введите адрес объекта:"
+
+msgid "enter_location"
+msgstr "Пожалуйста, отправьте локацию (координаты):"
+
+msgid "select_appointment"
+msgstr "Выберите назначение объекта:"
+
+msgid "select_layout"
+msgstr "Выберите планировку:"
+
+msgid "select_state"
+msgstr "Выберите состояние строительства:"
+
+msgid "select_heating"
+msgstr "Выберите тип отопления:"
+
+msgid "select_payment"
+msgstr "Выберите способ оплаты:"
+
+msgid "select_communication"
+msgstr "Кто отвечает за коммуникацию?"
+
+msgid "enter_rooms"
+msgstr "Введите количество комнат:"
+
+msgid "enter_area"
+msgstr "Введите общую площадь (м²):"
+
+msgid "enter_area_kitchen"
+msgstr "Введите площадь кухни (м²):"
+
+msgid "is_there_balcony"
+msgstr "Есть ли балкон в помещении?"
+
+msgid "enter_commission"
+msgstr "Введите размер комиссии (% или сумму):"
+
+msgid "enter_description"
+msgstr "Введите описание объекта:"
+
+msgid "enter_price"
+msgstr "Введите цену ($):"
+
+# Дополнительные Enum
+msgid "вторичный рынок"
+msgstr "Вторичный рынок"
+
+msgid "новострой"
+msgstr "Новострой"
+
+msgid "котедж"
+msgstr "Коттедж"
+
+msgid "центр"
+msgstr "Центр"
+
+msgid "Хортицкий"
+msgstr "Хортицкий"
+
+msgid "Космический"
+msgstr "Космический"
+
+msgid "_no_authorization."
+msgstr "Не авторизированы"

@@ -4,106 +4,55 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Project-Id-Version: \n"
 
+# --- AUTH & REGISTRATION ---
 msgid "enter_email"
-msgstr "📧 Please enter your Email:"
+msgstr "Please enter your email address:"
 
 msgid "email_recorded"
-msgstr "✅ Email {email} recorded. Now enter your password:"
+msgstr "Email {email} recorded. Now enter your password:"
+
+msgid "enter_password"
+msgstr "Please enter your password:"
 
 msgid "checking_data"
-msgstr "🔄 Checking credentials on server..."
+msgstr "Checking data on server..."
 
 msgid "auth_success"
-msgstr "✅ Authorization successful!\n\nLogged in as: **{email}**\nView profile: /profile"
+msgstr "Authorization successful!\n\nYou are logged in as: **{email}**\nView profile: /profile"
 
 msgid "auth_error"
-msgstr "❌ Error: {error}\n\nPlease try entering Email again:"
+msgstr "Error: {error}\n\nPlease try entering your email again:"
 
 msgid "not_authorized"
-msgstr "🔐 You are not authorized. Press /start to login."
+msgstr "You are not authorized. Press /start to log in."
 
-msgid "profile_data"
-msgstr "👤 Your profile data:\n\n`{data}`"
-
-msgid "language_set_success"
-msgstr "🇺🇸 Language set to English"
-
-# Authorization main buttons
-msgid "btn_login"
-msgstr "🔐 Login"
-
-msgid "btn_register"
-msgstr "📝 Register"
-
-# Language selection buttons
-msgid "btn_lang_uk"
-msgstr "Українська"
-
-msgid "btn_lang_en"
-msgstr "English"
-
-msgid "btn_lang_ru"
-msgstr "Русский"
-
-# Other general buttons
-msgid "btn_back"
-msgstr "⬅️ Back"
-
-msgid "btn_cancel"
-msgstr "❌ Cancel"
-# State keys
-msgid "enter_new_first_name"
-msgstr "Enter your new first name:"
-
-msgid "enter_new_last_name"
-msgstr "Enter your new last name:"
-
-msgid "enter_new_phone"
-msgstr "Enter your new phone number:"
-
-msgid "enter_new_email"
-msgstr "Enter your new email address:"
-
-msgid "enter_new_password"
-msgstr "Enter your new password:"
-
-# Keyboard keys
-msgid "edit_first_name"
-msgstr "✏️ Name"
-
-msgid "edit_last_name"
-msgstr "✏️ Last Name"
-
-msgid "edit_phone_name"
-msgstr "📞 Phone"
-
-msgid "edit_email_name"
-msgstr "📧 Email"
-
-msgid "edit_photo_name"
-msgstr "🖼 Photo"
-
-msgid "edit_password_"
-msgstr "🔑 Password"
-
-msgid "finish_registration_btn"
-msgstr "✅ Confirm Registration"
-
-# Message keys
-msgid "data_updated"
-msgstr "✅ Data updated!"
+msgid "no_authorization"
+msgstr "❌ You are not authorized. Please log in."
 
 msgid "registration_complete_success"
-msgstr "🎉 Registration successful!"
+msgstr "Registration successful!"
 
 msgid "registration_failed"
-msgstr "❌ Registration failed. Please try again later."
+msgstr "Registration failed. Please try again later."
 
-msgid "check_your_data"
-msgstr "Check your data:"
+# --- PROFILE DATA ---
+msgid "profile_data"
+msgstr "Your profile data:\n\n`{data}`"
 
-msgid "btn_back_to_lang"
-msgstr "Change language"
+msgid "you_profile"
+msgstr "Your Profile"
+
+msgid "name"
+msgstr "Name"
+
+msgid "email"
+msgstr "Email"
+
+msgid "phone"
+msgstr "Phone"
+
+msgid "no"
+msgstr "not specified"
 
 msgid "enter_first_name"
 msgstr "Please enter your first name:"
@@ -114,13 +63,81 @@ msgstr "Please enter your last name:"
 msgid "enter_phone"
 msgstr "Please enter your phone number:"
 
-msgid "enter_email"
-msgstr "Please enter your email address:"
+msgid "enter_new_first_name"
+msgstr "Enter your new first name:"
 
-msgid "enter_password"
-msgstr "Please enter your password:"
+msgid "enter_new_phone"
+msgstr "Enter your new phone number:"
 
-# Language selection buttons
+msgid "data_updated"
+msgstr "Data updated!"
+
+# --- MENU BUTTONS ---
+msgid "btn_login"
+msgstr "Login"
+
+msgid "btn_register"
+msgstr "Register"
+
+msgid "btn_adverts"
+msgstr "🏢 All Listings"
+
+msgid "btn_profile_data"
+msgstr "👤 My Profile"
+
+msgid "btn_create_advert"
+msgstr "➕ Create Listing"
+
+msgid "btn_my_adverts"
+msgstr "📂 My Listings"
+
+msgid "btn_my_profile"
+msgstr "⚙️ Profile Settings"
+
+msgid "main_menu_label"
+msgstr "Main Menu"
+
+msgid "auth_choice_text"
+msgstr "Let's start over!"
+
+# --- CONTROL BUTTONS ---
+msgid "btn_back"
+msgstr "Back"
+
+msgid "btn_back_a"
+msgstr "⬅️ Back"
+
+msgid "btn_cancel"
+msgstr "Cancel"
+
+msgid "btn_cancel_a"
+msgstr "❌ Cancel"
+
+msgid "btn_confirm_and_publish"
+msgstr " Confirm and Publish"
+
+msgid "btn_skip"
+msgstr "⏭ Skip"
+
+msgid "btn_finish_loading"
+msgstr "🏁 Finish Upload"
+
+# --- LOCALIZATION ---
+msgid "language_set_success"
+msgstr "Language set successfully!"
+
+msgid "btn_lang_uk"
+msgstr "Українська"
+
+msgid "btn_lang_en"
+msgstr "English"
+
+msgid "btn_lang_ru"
+msgstr "Русский"
+
+msgid "btn_back_to_lang"
+msgstr "Change Language"
+
 msgid "Ukrainian"
 msgstr "Ukrainian"
 
@@ -130,25 +147,230 @@ msgstr "Russian"
 msgid "English"
 msgstr "English"
 
-# Menu buttons
-msgid "btn_login"
-msgstr "Login"
+# --- LISTINGS & GEOLOCATION ---
+msgid "address"
+msgstr "Address"
 
-msgid "btn_register"
-msgstr "Registration"
+msgid "location"
+msgstr "Location (coordinates)"
 
-msgid "btn_back_to_lang"
-msgstr "Change language"
+msgid "coordinates"
+msgstr "Coordinates"
 
-msgid "btn_back"
-msgstr "Back"
+msgid "send_location_btn"
+msgstr "📍 Send My Location"
 
-msgid "btn_cancel"
-msgstr "Cancel"
+msgid "please_send_location"
+msgstr "Please click the button below to send the property location, or send it as an attachment."
 
-msgid "language_set_success"
-msgstr "Language has been set!"
+msgid "not_specified"
+msgstr "not specified"
 
+msgid "preview_advert_title"
+msgstr "Listing Preview"
 
-msgid "auth_choice_text"
-msgstr "Let's start over!"
+msgid "no_adverts_found"
+msgstr "📭 You have no listings yet."
+
+msgid "advert_created_success_msg"
+msgstr "🎉 Congratulations! Listing published successfully!"
+
+msgid "advert_creation_failed"
+msgstr "❌ Failed to create listing."
+
+# --- PROPERTY SPECS ---
+msgid "appointment"
+msgstr "Purpose"
+
+msgid "layout"
+msgstr "Layout"
+
+msgid "state"
+msgstr "Condition"
+
+msgid "heating"
+msgstr "Heating"
+
+msgid "payment"
+msgstr "Payment Type"
+
+msgid "commission"
+msgstr "Commission"
+
+msgid "description"
+msgstr "Description"
+
+msgid "images"
+msgstr "Photos"
+
+msgid "price"
+msgstr "Price"
+
+msgid "area"
+msgstr "Total Area"
+
+msgid "kitchen_area"
+msgstr "Kitchen Area"
+
+msgid "rooms"
+msgstr "Rooms"
+
+msgid "balcony"
+msgstr "Balcony"
+
+msgid "photos_count"
+msgstr "Number of photos"
+
+msgid "send_photos_now"
+msgstr "Great! Now you can review the data."
+
+msgid "yes"
+msgstr "Yes"
+
+msgid "no_val"
+msgstr "No"
+
+# User Roles
+msgid "admin"
+msgstr "Administrator"
+
+msgid "agent"
+msgstr "Agent"
+
+msgid "client"
+msgstr "Client"
+
+# Appointment
+msgid "apartments"
+msgstr "Apartments"
+
+msgid "flat"
+msgstr "Flat"
+
+msgid "studio"
+msgstr "Studio"
+
+# Status
+msgid "handed over"
+msgstr "Handed over"
+
+msgid "pit"
+msgstr "Foundation pit"
+
+# Layout
+msgid "joint"
+msgstr "Joint"
+
+msgid "separate"
+msgstr "Separate"
+
+# Heating
+msgid "centralized"
+msgstr "Centralized"
+
+msgid "autonomous"
+msgstr "Autonomous"
+
+msgid "individual"
+msgstr "Individual"
+
+# Payments
+msgid "cash"
+msgstr "Cash"
+
+msgid "mortgage"
+msgstr "Mortgage"
+
+msgid "installment"
+msgstr "Installment"
+
+# Parties
+msgid "developer"
+msgstr "Developer"
+
+msgid "notary"
+msgstr "Notary"
+
+msgid "sales_department"
+msgstr "Sales Department"
+
+msgid "user"
+msgstr "User"
+
+# Building Type
+msgid "apartment_building"
+msgstr "Apartment building"
+
+msgid "private_house"
+msgstr "Private house"
+
+msgid "house"
+msgstr "House"
+
+# Question keys from STATES_MAP
+msgid "enter_address"
+msgstr "Please enter the property address:"
+
+msgid "enter_location"
+msgstr "Please send the location (coordinates):"
+
+msgid "select_appointment"
+msgstr "Select property purpose:"
+
+msgid "select_layout"
+msgstr "Select layout:"
+
+msgid "select_state"
+msgstr "Select construction state:"
+
+msgid "select_heating"
+msgstr "Select heating type:"
+
+msgid "select_payment"
+msgstr "Select payment method:"
+
+msgid "select_communication"
+msgstr "Who is responsible for communication?"
+
+msgid "enter_rooms"
+msgstr "Enter number of rooms:"
+
+msgid "enter_area"
+msgstr "Enter total area (sq.m):"
+
+msgid "enter_area_kitchen"
+msgstr "Enter kitchen area (sq.m):"
+
+msgid "is_there_balcony"
+msgstr "Is there a balcony?"
+
+msgid "enter_commission"
+msgstr "Enter commission amount (% or sum):"
+
+msgid "enter_description"
+msgstr "Enter property description:"
+
+msgid "enter_price"
+msgstr "Enter price ($):"
+
+# Additional Enums
+msgid "вторичный рынок"
+msgstr "Secondary market"
+
+msgid "новострой"
+msgstr "New build"
+
+msgid "котедж"
+msgstr "Cottage"
+
+msgid "центр"
+msgstr "Center"
+
+msgid "Хортицкий"
+msgstr "Khortytsky"
+
+msgid "Космический"
+msgstr "Kosmichesky"
+
+msgid "_no_authorization."
+msgstr "No authorization"

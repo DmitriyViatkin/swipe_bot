@@ -2,7 +2,9 @@ from aiogram import Router, types, F
 from aiogram.utils.i18n import lazy_gettext as __
 from aiogram.fsm.context import FSMContext
 from src.api_client.base_api import BaseAPIClient
-
+from src.bot.authorization.keyboards.auth_choise_keyboard import (
+    get_auth_choice_keyboard,
+)
 
 router = Router()
 
@@ -18,7 +20,7 @@ async def profile_handler(
 
     if not token or not user_id:
         await message.answer(
-            "Ви не авторизовані. Будь ласка, увійдіть в систему знову."
+            "_no_authorization.", reply_markup=get_auth_choice_keyboard()
         )
         return
     user_profile = await api.get_user_data(user_id, token)
@@ -27,12 +29,11 @@ async def profile_handler(
         await message.answer(f"Помилка завантаження: {user_profile['error']}")
         return
     response_text = (
-        f"👤 **Ваш профіль**\n"
+        f"👤 **__you_profile**\n"
         f"━━━━━━━━━━━━━━━━━━\n"
-        f"**Ім'я:** {user_profile.get('first_name')} {user_profile.get('last_name')}\n"
-        f"**Email:** `{user_profile.get('email')}`\n"
-        f"**Роль:** {user_profile.get('role')}\n"
-        f"**Телефон:** {user_profile.get('phone') or 'не вказано'}\n"
+        f"**_name:** {user_profile.get('first_name')} {user_profile.get('last_name')}\n"
+        f"**_email:** `{user_profile.get('email')}`\n"
+        f"**_phone:** {user_profile.get('phone') or '_no'}\n"
     )
 
     await message.answer(response_text, parse_mode="Markdown")

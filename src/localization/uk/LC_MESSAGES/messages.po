@@ -4,11 +4,15 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Project-Id-Version: \n"
 
+# --- АВТОРИЗАЦИЯ И РЕГИСТРАЦИЯ ---
 msgid "enter_email"
-msgstr "Введіть ваш Email:"
+msgstr "Будь ласка, введіть вашу електронну пошту (email):"
 
 msgid "email_recorded"
 msgstr "Email {email} записано. Тепер введіть ваш пароль:"
+
+msgid "enter_password"
+msgstr "Будь ласка, введіть ваш пароль:"
 
 msgid "checking_data"
 msgstr "Перевірка даних на сервері..."
@@ -22,18 +26,105 @@ msgstr "Помилка: {error}\n\nСпробуйте ввести Email ще р
 msgid "not_authorized"
 msgstr "Ви не авторизовані. Натисніть /start, щоб увійти."
 
+msgid "no_authorization"
+msgstr "❌ Ви не авторизовані. Будь ласка, увійдіть в систему."
+
+msgid "registration_complete_success"
+msgstr "Реєстрація пройшла успішно!"
+
+msgid "registration_failed"
+msgstr "Помилка реєстрації. Спробуйте пізніше."
+
+# --- ЛИЧНЫЕ ДАННЫЕ И ПРОФИЛЬ ---
 msgid "profile_data"
 msgstr "Дані вашого профілю:\n\n`{data}`"
 
-msgid "language_set_success"
-msgstr "Мову встановлено: Українська"
+msgid "you_profile"
+msgstr "Ваш профіль"
 
+msgid "name"
+msgstr "Ім'я"
 
+msgid "email"
+msgstr "Email"
+
+msgid "phone"
+msgstr "Телефон"
+
+msgid "no"
+msgstr "не вказано"
+
+msgid "enter_first_name"
+msgstr "Будь ласка, введіть ваше ім'я:"
+
+msgid "enter_last_name"
+msgstr "Будь ласка, введіть ваше прізвище:"
+
+msgid "enter_phone"
+msgstr "Будь ласка, введіть ваш номер телефону:"
+
+msgid "enter_new_first_name"
+msgstr "Введіть ваше нове ім'я:"
+
+msgid "enter_new_phone"
+msgstr "Введіть ваш новий номер телефону:"
+
+msgid "data_updated"
+msgstr "Дані оновлено!"
+
+# --- КНОПКИ МЕНЮ ---
 msgid "btn_login"
 msgstr "Увійти"
 
 msgid "btn_register"
 msgstr "Реєстрація"
+
+msgid "btn_adverts"
+msgstr "🏢 Всі оголошення"
+
+msgid "btn_profile_data"
+msgstr "👤 Мій профіль"
+
+msgid "btn_create_advert"
+msgstr "➕ Створити оголошення"
+
+msgid "btn_my_adverts"
+msgstr "📂 Мої оголошення"
+
+msgid "btn_my_profile"
+msgstr "⚙️ Налаштування профілю"
+
+msgid "main_menu_label"
+msgstr "Головне меню"
+
+msgid "auth_choice_text"
+msgstr "Почнемо спочатку!"
+
+# --- КНОПКИ УПРАВЛЕНИЯ ---
+msgid "btn_back"
+msgstr "Назад"
+
+msgid "btn_back_a"
+msgstr "⬅️ Назад"
+
+msgid "btn_cancel"
+msgstr "Скасувати"
+
+msgid "btn_cancel_a"
+msgstr "❌ Скасувати"
+
+msgid "btn_confirm_and_publish"
+msgstr " Підтвердити та опублікувати"
+
+msgid "btn_skip"
+msgstr "⏭ Пропустити"
+
+msgid "btn_finish_loading"
+msgstr "🏁 Завершити завантаження"
+
+# --- ЛОКАЛИЗАЦИЯ (ЯЗЫКИ) ---
+msgid "language_set_success"
+msgstr "Мову встановлено!"
 
 msgid "btn_lang_uk"
 msgstr "Українська"
@@ -44,56 +135,9 @@ msgstr "English"
 msgid "btn_lang_ru"
 msgstr "Русский"
 
-
-msgid "btn_back"
-msgstr "️Назад"
-
-msgid "btn_cancel"
-msgstr "Скасувати"
-
-msgid "enter_new_first_name"
-msgstr "Введіть ваше нове ім'я:"
-
-msgid "enter_new_phone"
-msgstr "Введіть ваш новий номер телефону:"
-
-
-msgid "edit_first_name"
-msgstr "Ім'я"
-
-msgid "edit_phone_name"
-msgstr "Телефон"
-
-
-msgid "data_updated"
-msgstr "Дані оновлено!"
-
-msgid "registration_complete_success"
-msgstr "Реєстрація пройшла успішно!"
-
-msgid "registration_failed"
-msgstr "Помилка реєстрації. Спробуйте пізніше."
-
 msgid "btn_back_to_lang"
 msgstr "Змінити мову"
 
-# Ключі для станів
-msgid "enter_first_name"
-msgstr "Будь ласка, введіть ваше ім'я:"
-
-msgid "enter_last_name"
-msgstr "Будь ласка, введіть ваше прізвище:"
-
-msgid "enter_phone"
-msgstr "Будь ласка, введіть ваш номер телефону:"
-
-msgid "enter_email"
-msgstr "Будь ласка, введіть вашу електронну пошту (email):"
-
-msgid "enter_password"
-msgstr "Будь ласка, введіть ваш пароль:"
-
-# Кнопки вибору мови
 msgid "Ukrainian"
 msgstr "Ukrainian"
 
@@ -103,24 +147,240 @@ msgstr "Russian"
 msgid "English"
 msgstr "English"
 
-# Кнопки меню
-msgid "btn_login"
-msgstr "Увійти"
+# --- ОБЪЯВЛЕНИЯ И ГЕОЛОКАЦИЯ ---
+msgid "address"
+msgstr "Адреса"
 
-msgid "btn_register"
-msgstr "Реєстрація"
+msgid "location"
+msgstr "Локація (координати)"
 
-msgid "btn_back_to_lang"
-msgstr "Змінити мову"
+msgid "coordinates"
+msgstr "Координати"
 
-msgid "btn_back"
-msgstr "Назад"
+msgid "send_location_btn"
+msgstr "📍 Відправити мою локацію"
 
-msgid "btn_cancel"
-msgstr "Скасувати"
+msgid "please_send_location"
+msgstr "Будь ласка, натисніть кнопку нижче, щоб відправити геолокацію об'єкта, або надішліть її через скріпку."
 
-msgid "language_set_success"
-msgstr "Мову встановлено!"
+msgid "not_specified"
+msgstr "не вказано"
 
-msgid "auth_choice_text"
-msgstr "Почнемо спочатку!"
+msgid "preview_advert_title"
+msgstr "Попередній перегляд оголошення"
+
+msgid "no_adverts_found"
+msgstr "📭 У вас поки немає оголошень."
+
+msgid "advert_created_success_msg"
+msgstr "🎉 Вітаємо! Оголошення успішно опубліковано!"
+
+msgid "advert_creation_failed"
+msgstr "❌ Не вдалося створити оголошення."
+
+# --- ПАРАМЕТРЫ ОБЪЕКТА (Enum) ---
+msgid "appointment"
+msgstr "Призначення"
+
+msgid "layout"
+msgstr "Планування"
+
+msgid "state"
+msgstr "Стан"
+
+msgid "heating"
+msgstr "Опалення"
+
+msgid "payment"
+msgstr "Тип оплати"
+
+msgid "commission"
+msgstr "Комісія"
+
+msgid "description"
+msgstr "Опис"
+
+msgid "images"
+msgstr "Фотографії"
+
+msgid "price"
+msgstr "Ціна"
+
+msgid "area"
+msgstr "Загальна площа"
+
+msgid "kitchen_area"
+msgstr "Площа кухні"
+
+msgid "rooms"
+msgstr "Кількість кімнат"
+
+msgid "balcony"
+msgstr "Балкон"
+
+msgid "photos_count"
+msgstr "Кількість завантажених фото"
+
+msgid "send_photos_now"
+msgstr "Чудово! Тепер ви можете перевірити дані."
+
+msgid "yes"
+msgstr "Так"
+
+msgid "no_val"
+msgstr "Ні"
+
+# Ролі користувачів (UserRole)
+msgid "admin"
+msgstr "Адміністратор"
+
+msgid "agent"
+msgstr "Агент"
+
+msgid "client"
+msgstr "Клієнт"
+
+# Ролі користувачів (UserRole)
+msgid "admin"
+msgstr "Адміністратор"
+
+msgid "agent"
+msgstr "Агент"
+
+msgid "client"
+msgstr "Клієнт"
+
+# Призначення (AppointmentEnum)
+msgid "apartments"
+msgstr "Апартаменти"
+
+msgid "flat"
+msgstr "Квартира"
+
+msgid "studio"
+msgstr "Студія"
+
+# Стан будівництва (StateEnum / StatusBuildEnum)
+msgid "handed over"
+msgstr "Здано в експлуатацію"
+
+msgid "pit"
+msgstr "Котлован"
+
+# Планування (LayoutEnum)
+msgid "joint"
+msgstr "Суміжне"
+
+msgid "separate"
+msgstr "Роздільне"
+
+# Опалення (HeatingEnum)
+msgid "centralized"
+msgstr "Централізоване"
+
+msgid "autonomous"
+msgstr "Автономне"
+
+msgid "individual"
+msgstr "Індивідуальне"
+
+# Способи оплати (PaymentEnum)
+msgid "cash"
+msgstr "Готівка"
+
+msgid "mortgage"
+msgstr "Іпотека"
+
+msgid "installment"
+msgstr "Розстрочка"
+
+# Сторони (PaymentParty / CommunicationParty)
+msgid "developer"
+msgstr "Забудовник"
+
+msgid "notary"
+msgstr "Нотаріус"
+
+msgid "sales_department"
+msgstr "Відділ продажу"
+
+msgid "user"
+msgstr "Користувач"
+
+# Типи будівель (BuildTypeEnum)
+msgid "apartment_building"
+msgstr "Багатоквартирний будинок"
+
+msgid "private_house"
+msgstr "Приватний будинок"
+
+msgid "house"
+msgstr "Дім"
+
+# Ключі запитань з STATES_MAP
+msgid "enter_address"
+msgstr "Будь ласка, введіть адресу об'єкта:"
+
+msgid "enter_location"
+msgstr "Будь ласка, надішліть локацію (координати):"
+
+msgid "select_appointment"
+msgstr "Оберіть призначення об'єкта:"
+
+msgid "select_layout"
+msgstr "Оберіть планування:"
+
+msgid "select_state"
+msgstr "Оберіть стан будівництва (етап):"
+
+msgid "select_heating"
+msgstr "Оберіть тип опалення:"
+
+msgid "select_payment"
+msgstr "Оберіть спосіб оплати:"
+
+msgid "select_communication"
+msgstr "Хто відповідає за комунікацію?"
+
+msgid "enter_rooms"
+msgstr "Введіть кількість кімнат:"
+
+msgid "enter_area"
+msgstr "Введіть загальну площу (м²):"
+
+msgid "enter_area_kitchen"
+msgstr "Введіть площу кухні (м²):"
+
+msgid "is_there_balcony"
+msgstr "Чи є балкон у приміщенні?"
+
+msgid "enter_commission"
+msgstr "Введіть розмір комісії (% або суму):"
+
+msgid "enter_description"
+msgstr "Введіть опис об'єкта:"
+
+msgid "enter_price"
+msgstr "Введіть ціну ($):"
+
+# Додаткові Enum (HousingMarket, District)
+msgid "вторичный рынок"
+msgstr "Вторинний ринок"
+
+msgid "новострой"
+msgstr "Новобудова"
+
+msgid "котедж"
+msgstr "Котедж"
+
+msgid "центр"
+msgstr "Центр"
+
+msgid "Хортицкий"
+msgstr "Хортицький"
+
+msgid "Космический"
+msgstr "Космічний"
+
+msgid "_no_authorization."
+msgstr "Не авторизовні"

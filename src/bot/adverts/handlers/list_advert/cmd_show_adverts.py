@@ -28,7 +28,7 @@ async def show_adverts_list_handler(
 
     photo_url = images[0].get("image") if images else None
     caption = format_ad_text(ad)
-    markup = get_advert_markup(0, len(ads))
+    markup = get_advert_markup(0, len(ads), ads[0]["id"])
 
     if photo_url:
         photo_bytes = await download_photo(photo_url)

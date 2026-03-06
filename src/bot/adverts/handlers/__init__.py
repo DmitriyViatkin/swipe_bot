@@ -29,6 +29,8 @@ from . import (
 from .list_advert import cmd_show_adverts
 from .list_advert import navigate_adverts
 from .list_advert import show_my_adverts
+from .list_advert import show_geo_handler
+
 
 router = Router()
 
@@ -57,6 +59,7 @@ router.include_router(edit_advert_field.router)
 router.include_router(finish_create_advert.router)
 router.include_router(cmd_show_adverts.router)
 router.include_router(show_my_adverts.router)
+router.include_router(show_geo_handler.router)
 router.include_router(navigate_adverts.router)
 router.include_router(back_a.router)
 router.include_router(cancel_a.router)

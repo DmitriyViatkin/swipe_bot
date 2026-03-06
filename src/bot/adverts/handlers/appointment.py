@@ -25,4 +25,4 @@ async def appointment_handler(message: types.Message, state: FSMContext):
         return
     await state.update_data(appointment=message.text)
     await state.set_state(AdvertsState.waiting_for_layout)
-    await message.answer(_("select_layout "), reply_markup=get_enum_kb(LayoutEnum))
+    await message.answer(_("select_layout"), reply_markup=get_enum_kb(LayoutEnum))
