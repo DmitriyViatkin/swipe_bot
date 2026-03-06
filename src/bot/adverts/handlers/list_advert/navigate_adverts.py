@@ -1,7 +1,8 @@
 from aiogram import Router, types, F
 from aiogram.fsm.context import FSMContext
 from .show_adverts import format_ad_text, get_advert_markup
-from aiogram.types import InputMediaPhoto, URLInputFile
+from aiogram.types import InputMediaPhoto, BufferedInputFile
+from src.api_client.photo_utils import download_photo
 
 router = Router()
 
@@ -29,21 +30,23 @@ async def navigate_adverts_handler(callback: types.CallbackQuery, state: FSMCont
     markup = get_advert_markup(idx, len(ads))
 
     if photo_url:
-        try:
-            await callback.message.edit_media(
-                media=InputMediaPhoto(
-                    media=URLInputFile(photo_url, filename=f"ad_{ad['id']}.jpg"),
-                    caption=caption,
-                    parse_mode="Markdown",
-                ),
-                reply_markup=markup,
-            )
-            await callback.answer()
-            return
-        except Exception as e:
-            print(f"Фото не завантажилось: {e}")
+        photo_bytes = await download_photo(photo_url)
+        if photo_bytes:
+            filename = photo_url.split("/")[-1]
+            try:
+                await callback.message.edit_media(
+                    media=InputMediaPhoto(
+                        media=BufferedInputFile(photo_bytes, filename=filename),
+                        caption=caption,
+                        parse_mode="Markdown",
+                    ),
+                    reply_markup=markup,
+                )
+                await callback.answer()
+                return
+            except Exception as e:
+                print(f"Фото не завантажилось: {e}")
 
-    # без фото
     try:
         await callback.message.edit_text(
             text=caption,
