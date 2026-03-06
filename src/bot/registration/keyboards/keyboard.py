@@ -51,8 +51,8 @@ def get_auth_choice_keyboard():
 
 def get_photo_keyboard():
     builder = ReplyKeyboardBuilder()
-    builder.button(text=_("btn_skip"))
-    builder.button(text=_("btn_back"))
-    builder.button(text=_("btn_cancel"))
+    builder.button(text=str(_("btn_skip")))
+    builder.button(text=str(__("btn_back")))
+    builder.button(text=str(_("btn_cancel")))
     builder.adjust(1, 2)
     return builder.as_markup(resize_keyboard=True)

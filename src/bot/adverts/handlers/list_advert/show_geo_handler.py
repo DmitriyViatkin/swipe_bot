@@ -25,5 +25,8 @@ async def show_geo_handler(callback: types.CallbackQuery, state: FSMContext):
     lat = float(lat)
     lon = float(lon)
 
-    await callback.message.answer_location(latitude=lat, longitude=lon)
+    geo_msg = await callback.message.answer_location(latitude=lat, longitude=lon)
+
+    # Записываем ID этого сообщения в память (FSM), чтобы потом удалить
+    await state.update_data(last_geo_msg_id=geo_msg.message_id)
     await callback.answer()

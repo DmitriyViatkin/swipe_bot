@@ -374,3 +374,33 @@ msgstr "Kosmichesky"
 
 msgid "_no_authorization."
 msgstr "No authorization"
+
+msgid "check_your_data"
+msgstr "Check your data"
+
+msgid "first_name"
+msgstr "First Name"
+
+msgid "last_name"
+msgstr "Last Name"
+
+msgid "phone"
+msgstr "Phone"
+
+msgid "email"
+msgstr "Email"
+
+msgid "photo"
+msgstr "Photo"
+
+msgid "password"
+msgstr "Password"
+
+msgid "welcome_msg"
+msgstr "welcome"
+
+msgid "invalid_coords_format"
+msgstr "Please enter coordinates in format: 50.45, 30.52"
+
+msgid "send_location_or_text"
+msgstr "Send your location or enter coordinates as text"

@@ -10,11 +10,24 @@ router = Router()
 @router.callback_query(F.data.in_(["next_ad", "prev_ad"]))
 async def navigate_adverts_handler(callback: types.CallbackQuery, state: FSMContext):
     data = await state.get_data()
-    ads = data.get("ads_cache", [])
+
     idx = data.get("current_ad_idx", 0)
 
     idx = idx + 1 if callback.data == "next_ad" else idx - 1
+    last_geo_id = data.get("last_geo_msg_id")
+    if last_geo_id:
+        try:
+            await callback.bot.delete_message(
+                chat_id=callback.message.chat.id, message_id=last_geo_id
+            )
+            # Стираем ID из памяти, чтобы не пытаться удалить снова
+            await state.update_data(last_geo_msg_id=None)
+        except Exception:
+            # Если сообщение уже удалено пользователем, просто игнорим
+            pass
+    # -------------------------------------
 
+    ads = data.get("ads_cache", [])
     if idx < 0 or idx >= len(ads):
         await callback.answer()
         return

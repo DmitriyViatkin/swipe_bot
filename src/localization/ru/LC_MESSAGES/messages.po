@@ -373,3 +373,31 @@ msgstr "Космический"
 
 msgid "_no_authorization."
 msgstr "Не авторизированы"
+
+msgid "check_your_data"
+msgstr"Проверьте ваши данные"
+
+msgid "first_name"
+msgstr"Имя"
+
+msgid "last_name"
+msgstr"Фамилия"
+msgid "phone"
+msgstr"Телефон"
+msgid "email"
+msgstr "Электронная почта"
+
+msgid "photo"
+msgstr "Фото"
+
+msgid "password"
+msgstr "Пароль"
+
+msgid "welcome_msg"
+msgstr "Добро пожаловать"
+
+msgid "invalid_coords_format"
+msgstr "Пожалуйста, введите координаты в формате: 50.45, 30.52"
+
+msgid "send_location_or_text"
+msgstr "Отправьте локацию или введите координаты текстом"
