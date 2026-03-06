@@ -1,6 +1,6 @@
 from aiogram import Router, types, F
 from aiogram.fsm.context import FSMContext
-from .show_adverts import DEFAULT_IMAGE, format_ad_text, get_advert_markup
+from .show_adverts import format_ad_text, get_advert_markup
 from aiogram.types import InputMediaPhoto, URLInputFile
 
 router = Router()
@@ -23,27 +23,34 @@ async def navigate_adverts_handler(callback: types.CallbackQuery, state: FSMCont
 
     gallery = ad.get("gallery") or {}
     images = gallery.get("images", [])
-    image_url = images[0].get("image") if images else DEFAULT_IMAGE
+    photo_url = images[0].get("image") if images else None
 
+    caption = format_ad_text(ad)
+    markup = get_advert_markup(idx, len(ads))
+
+    if photo_url:
+        try:
+            await callback.message.edit_media(
+                media=InputMediaPhoto(
+                    media=URLInputFile(photo_url, filename=f"ad_{ad['id']}.jpg"),
+                    caption=caption,
+                    parse_mode="Markdown",
+                ),
+                reply_markup=markup,
+            )
+            await callback.answer()
+            return
+        except Exception as e:
+            print(f"Фото не завантажилось: {e}")
+
+    # без фото
     try:
-        # 1. Пробуем обновить медиа
-        await callback.message.edit_media(
-            media=InputMediaPhoto(
-                media=URLInputFile(image_url, filename=f"ad_{ad['id']}.jpg"),
-                caption=format_ad_text(ad),
-                parse_mode="Markdown",
-            ),
-            reply_markup=get_advert_markup(idx, len(ads)),
-        )
-    except Exception as e:
-        print(f"DEBUG: Ошибка обновления медиа: {e}")
-        # 2. Если не вышло (wrong type или нет текста), удаляем старое и шлем новое
-        await callback.message.delete()
-        await callback.message.answer_photo(
-            photo=URLInputFile(image_url, filename=f"ad_{ad['id']}.jpg"),
-            caption=format_ad_text(ad),
-            reply_markup=get_advert_markup(idx, len(ads)),
+        await callback.message.edit_text(
+            text=caption,
+            reply_markup=markup,
             parse_mode="Markdown",
         )
+    except Exception as e:
+        print(f"edit_text помилка: {e}")
 
     await callback.answer()

@@ -17,9 +17,14 @@ from ..keyboard.control_panel import control_keyboard
 router = Router()
 
 STATES_MAP = {
-    AdvertsState.waiting_for_appointment: (
+    AdvertsState.waiting_for_location: (
         AdvertsState.waiting_for_address,
         "enter_address",
+        None,
+    ),
+    AdvertsState.waiting_for_appointment: (
+        AdvertsState.waiting_for_location,
+        "enter_location",
         None,
     ),
     AdvertsState.waiting_for_layout: (

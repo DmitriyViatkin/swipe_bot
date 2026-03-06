@@ -13,10 +13,13 @@ async def process_show_summary(message: types.Message, state: FSMContext):
     data = await state.get_data()
 
     await state.set_state(AdvertsState.confirm_data)
-
+    lat = data.get("latitude")
+    lon = data.get("longitude")
+    location_str = f"{lat}, {lon}" if lat and lon else _("not_specified")
     summary_text = (
         f"📝 {_('preview_advert_title')}\n\n"
         f"📍 {_('address')}: {data.get('address')}\n"
+        f"🌐 {_('coordinates')}: {location_str}\n"
         f"🏢 {_('appointment')}: {data.get('appointment')}\n"
         f"📐 {_('layout')}: {data.get('layout')}\n"
         f"🧱 {_('build_state')}: {data.get('state')}\n"

@@ -24,12 +24,16 @@ async def process_finish_create_advert(
             reply_markup=get_auth_choice_keyboard(),
         )
         return
+    user_id = api._decode_user_id(token)
 
     user_data = await state.get_data()
 
     payload = {
+        "user_id": user_id,
         "build_id": 1,
         "address": user_data.get("address"),
+        "latitude": user_data.get("latitude"),
+        "longitude": user_data.get("longitude"),
         "appointment": user_data.get("appointment"),
         "layout": user_data.get("layout"),
         "state": user_data.get("state"),

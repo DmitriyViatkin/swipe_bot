@@ -3,6 +3,7 @@ from aiogram import Router
 from . import (
     start_handler,
     start_create_adverts,
+    location_handler,
     appointment,
     layout_handler,
     state_handler,
@@ -32,6 +33,7 @@ router = Router()
 
 router.include_router(start_handler.router)
 router.include_router(start_create_adverts.router)
+router.include_router(location_handler.router)
 router.include_router(appointment.router)
 router.include_router(layout_handler.router)
 router.include_router(state_handler.router)

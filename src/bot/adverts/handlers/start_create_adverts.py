@@ -2,9 +2,9 @@ from aiogram import Router, F, types
 from aiogram.fsm.context import FSMContext
 from aiogram.utils.i18n import gettext as _, lazy_gettext as __
 from src.bot.adverts.adverts_state import AdvertsState
-from src.bot.adverts.keyboard.enum_kb import get_enum_kb
-from src.enums import AppointmentEnum
 from ..handlers.show_summary import process_show_summary
+from ..keyboard.control_panel import control_keyboard
+
 
 router = Router()
 
@@ -18,13 +18,11 @@ async def start_create_advert(message: types.Message, state: FSMContext):
     await state.update_data(address=message.text)
 
     data = await state.get_data()
-
-    if "price" in data:
-        # Возвращаемся в превью
+    if data.get("is_editing"):
+        await state.update_data(is_editing=False, edit_field=None)
+        await state.set_state(AdvertsState.confirm_data)
         await process_show_summary(message, state)
+        return
     else:
-        # Идем по обычному пути анкеты
-        await state.set_state(AdvertsState.waiting_for_appointment)
-        await message.answer(
-            _("select_appointment"), reply_markup=get_enum_kb(AppointmentEnum)
-        )
+        await state.set_state(AdvertsState.waiting_for_location)
+        await message.answer(_("enter_location"), reply_markup=control_keyboard())

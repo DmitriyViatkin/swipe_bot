@@ -3,6 +3,7 @@ from aiogram.fsm.state import StatesGroup, State
 
 class AdvertsState(StatesGroup):
     waiting_for_address = State()
+    waiting_for_location = State()
     waiting_for_appointment = State()
     waiting_for_layout = State()
     waiting_for_build_state = State()

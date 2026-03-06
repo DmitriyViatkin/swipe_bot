@@ -3,6 +3,16 @@
 from enum import Enum
 
 
+class UserRole(str, Enum):
+    ADMIN = "admin"
+    SUPERADMIN = "superadmin"
+    AGENT = "agent"
+    DEV = "dev"
+    NOTARY = "notary"
+    SALES_DEP = "sales_dep"
+    CLIENT = "client"
+
+
 class BuildingStatus(str, Enum):
     APARTMENT = "apartment"
     COTTAGE = "cottage"
@@ -56,15 +66,15 @@ class UtilityBillsChoice(str, Enum):
 
 
 class AppointmentEnum(str, Enum):
-    APARTMENTS = "Апартаменты"
-    FLAT = "Квартира"
-    HOUSE = "Дом"
-    STUDIO = "Студия"
+    APARTMENTS = "apartments"
+    FLAT = "flat"
+    HOUSE = "house"
+    STUDIO = "studio"
 
 
 class LayoutEnum(str, Enum):
-    JOINT = "санузел+ туалет"
-    SEPARATE = "Сан узел и туалет роздельно"
+    JOINT = "joint"
+    SEPARATE = "separate"
 
 
 class StateEnum(str, Enum):
@@ -73,9 +83,9 @@ class StateEnum(str, Enum):
 
 
 class HeatingEnum(str, Enum):
-    CENTRALIZED = "Централизованное"
-    AUTONOMOUS = "Автономное"
-    INDIVIDUAL = "Индивидуальное"
+    CENTRALIZED = "centralized"
+    AUTONOMOUS = "autonomous"
+    INDIVIDUAL = "individual"
 
 
 class PaymentPartyEnum(str, Enum):
