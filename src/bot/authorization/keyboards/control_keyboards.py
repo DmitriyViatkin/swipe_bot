@@ -6,9 +6,9 @@ def get_control_keyboard(show_back: bool = True):
     builder = ReplyKeyboardBuilder()
 
     if show_back:
-        builder.button(text=str(__("btn_back")))
+        builder.button(text=str(__("btn_back_b")))
 
-    builder.button(text=str(__("btn_cancel")))
+    builder.button(text=str(__("btn_cancel_b")))
 
     builder.adjust(2)
     return builder.as_markup(resize_keyboard=True)

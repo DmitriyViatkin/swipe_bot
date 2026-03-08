@@ -11,7 +11,7 @@ async def handle_edit_field(callback: types.CallbackQuery, state: FSMContext):
     field = callback.data.replace("edit_", "")
 
     states_map = {
-        "first_name": RegistrationState.waiting_for_first_name,
+        "_(first_name)": RegistrationState.waiting_for_first_name,
         "last_name": RegistrationState.waiting_for_last_name,
         "phone": RegistrationState.waiting_for_phone,
         "email": RegistrationState.waiting_for_email,

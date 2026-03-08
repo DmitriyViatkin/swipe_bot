@@ -113,6 +113,12 @@ msgstr "Cancel"
 msgid "btn_cancel_a"
 msgstr "❌ Cancel"
 
+msgid "btn_back_b"
+msgstr "⬅️ Back"
+
+
+msgid "btn_cancel_b"
+msgstr "❌ Cancel"
 msgid "btn_confirm_and_publish"
 msgstr " Confirm and Publish"
 
@@ -404,3 +410,31 @@ msgstr "Please enter coordinates in format: 50.45, 30.52"
 
 msgid "send_location_or_text"
 msgstr "Send your location or enter coordinates as text"
+
+
+msgid "edit_first_name"
+msgstr "Edit First Name"
+
+msgid "edit_last_name"
+msgstr "Edit Last Name"
+
+msgid "edit_phone_name"
+msgstr "Edit Phone Number"
+
+msgid "edit_email_name"
+msgstr "Edit Email"
+
+msgid "edit_photo_name"
+msgstr "Edit Photo"
+
+msgid "edit_password_"
+msgstr "Edit Password"
+
+msgid "finish_registration_btn"
+msgstr "✅ Finish Registration"
+
+msgid "btn_my_menu"
+msgstr "📱 Main Menu"
+
+msgid "main_menu_title"
+msgstr "Main Menu"

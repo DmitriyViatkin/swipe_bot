@@ -7,33 +7,11 @@ from src.bot.authorization.keyboards.control_keyboards import get_control_keyboa
 router = Router()
 
 
-@router.message(F.text == __("btn_login"))
+@router.message(
+    F.text == __("btn_login"), ~F.text.in_([__("btn_cancel_b"), __("btn_back_b")])
+)
 async def start_login(message: types.Message, state: FSMContext):
 
     await state.set_state(AuthStates.waiting_for_email)
 
     await message.answer(_("enter_email"), reply_markup=get_control_keyboard())
-
-
-@router.message(F.text == __("btn_cancel"))
-async def cancel_auth(message: types.Message, state: FSMContext):
-    await state.clear()
-
-    await message.answer(
-        _("auth_choice_text"), reply_markup=types.ReplyKeyboardRemove()
-    )
-
-
-@router.message(F.text == __("btn_back"))
-async def go_back_auth(message: types.Message, state: FSMContext):
-    current_state = await state.get_state()
-
-    if current_state == AuthStates.waiting_for_password:
-        await state.set_state(AuthStates.waiting_for_email)
-        await message.answer(_("enter_email"), reply_markup=get_control_keyboard())
-
-    elif current_state == AuthStates.waiting_for_email:
-        await state.clear()
-        await message.answer(
-            _("auth_choice_text"), reply_markup=types.ReplyKeyboardRemove()
-        )

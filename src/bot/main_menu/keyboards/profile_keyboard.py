@@ -5,6 +5,7 @@ from aiogram.utils.i18n import gettext as _
 def profile_menu():
 
     builder = ReplyKeyboardBuilder()
+    builder.button(text=_("btn_my_menu"))
     builder.button(text=_("btn_my_adverts"))
     builder.button(text=_("btn_my_profile"))
     builder.button(text=_("btn_create_advert"))

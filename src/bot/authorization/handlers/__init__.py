@@ -1,8 +1,16 @@
 from aiogram import Router
-from . import start, language, auth_login, auth_choice, auth_email, auth_password
+from . import (
+    start,
+    language,
+    auth_login,
+    auth_choice,
+    auth_email,
+    auth_password,
+    navigation,
+)
 
 router = Router()
-
+router.include_router(navigation.router)
 router.include_router(start.router)
 router.include_router(language.router)
 router.include_router(auth_choice.router)

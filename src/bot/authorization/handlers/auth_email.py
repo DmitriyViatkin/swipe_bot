@@ -1,12 +1,15 @@
 from aiogram.fsm.context import FSMContext
 
 from src.bot.authorization.states import AuthStates
-from aiogram import Router, types
+from aiogram import Router, types, F
+from aiogram.utils.i18n import lazy_gettext as __
 
 router = Router()
 
 
-@router.message(AuthStates.waiting_for_email)
+@router.message(
+    AuthStates.waiting_for_email, ~F.text.in_([__("btn_back_b"), __("btn_cancel_b")])
+)
 async def process_email(message: types.Message, state: FSMContext):
     email = message.text.strip()
 

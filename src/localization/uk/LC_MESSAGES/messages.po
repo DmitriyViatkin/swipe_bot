@@ -113,6 +113,12 @@ msgstr "Скасувати"
 msgid "btn_cancel_a"
 msgstr "❌ Скасувати"
 
+msgid "btn_back_b"
+msgstr "Скасувати"
+
+msgid "btn_cancel_b"
+msgstr "❌ Скасувати"
+
 msgid "btn_confirm_and_publish"
 msgstr " Підтвердити та опублікувати"
 
@@ -414,3 +420,30 @@ msgstr "Будь ласка, введіть координати у формат
 
 msgid "send_location_or_text"
 msgstr "Надішліть локацію або введіть координати текстом"
+
+msgid "edit_first_name"
+msgstr "Змінити ім'я"
+
+msgid "edit_last_name"
+msgstr "Змінити прізвище"
+
+msgid "edit_phone_name"
+msgstr "Змінити номер телефону"
+
+msgid "edit_email_name"
+msgstr "Змінити Email"
+
+msgid "edit_photo_name"
+msgstr "Змінити фото"
+
+msgid "edit_password_"
+msgstr "Змінити пароль"
+
+msgid "finish_registration_btn"
+msgstr "✅ Завершити реєстрацію"
+
+msgid "btn_my_menu"
+msgstr "📱 Головне меню"
+
+msgid "main_menu_title"
+msgstr "Головне меню"
